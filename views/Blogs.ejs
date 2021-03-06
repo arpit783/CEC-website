@@ -1,0 +1,101 @@
+<%- include("header"); -%>
+<header class="jumbotron" id="Activities-head">
+       <div class="container">
+           <div class="row">
+               <div class="col-12 col-sm-6">
+                   <h1 class="jumbotron-head">Blogs</h1>
+               </div>
+           </div>
+       </div>
+   </header>
+    <!-- <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-1"></div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="blog-head-image" src="./images/Blog1.png">
+                    </div>
+                    <div class="col-sm-6 align-self-center blog-header">
+                        <div class="blog-head">Guggenheim Museum Bilbao</div>
+                        <div class="blog-head-date">27th March 2020</div>
+                        <div class="blog-details">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div> -->
+<%console.log(posts)%>
+   <%  posts.forEach(function(post){ %>
+       <div class="col-sm-1"></div>
+       <div class="col-sm">
+           <div class="row blog-pic">
+               <div class="col-sm-3 text-center align-self-center">
+               <img src="./images/<%=post.photoName%>.jpg" height="182px" width="244px">
+               </div>
+               <div class="col-sm-6 align-self-center">
+                   <div class="blog-heading"> <%=post.title%></div>
+                   <div class="blog-content"><%=post.content.substring(0, 100) + " ..."%>
+                   <a href="<%=post.link%>">Read More</a> </div>
+           </div>
+       </div>
+       <div class="col-sm-1"></div>
+   </div>
+
+     <% }) %>
+        <!-- <div class="row blog-row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm">
+                <div class="row blog-pic">
+                    <div class="col-sm-3 text-center align-self-center">
+                    <img src="./images/Blog Image.png" height="182px" width="244px">
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <div class="blog-heading">Guggenheim Museum Bilbao</div>
+                        <div class="blog-date">27th March 2020</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+          <div class="row blog-row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm">
+                <div class="row blog-pic">
+                    <div class="col-sm-3 text-center align-self-center">
+                    <img src="./images/Blog Image.png" height="182px" width="244px">
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <div class="blog-heading">Guggenheim Museum Bilbao</div>
+                        <div class="blog-date">27th March 2020</div>
+                        <div class="blog-content">An absolute icon of contemporary architecture of the nineties, the building of Guggenheim Museum Bilbao, located in Spain, features distorted and oblique volumes and sets an outlandish example of sculptural architecture. It sums up in itself merits and ambiguities of the new architectural languages in the years between the end of the twentieth century and the beginning of the third Millennium. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+          <div class="row blog-row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm">
+                <div class="row blog-pic">
+                    <div class="col-sm-3 text-center align-self-center">
+                    <img src="./images/Blog Image.png" height="182px" width="244px">
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <div class="blog-heading">Guggenheim Museum Bilbao</div>
+                        <div class="blog-date">27th March 2020</div>
+                        <div class="blog-content">An absolute icon of contemporary architecture of the nineties, the building of Guggenheim Museum Bilbao, located in Spain, features distorted and oblique volumes and sets an outlandish example of sculptural architecture. It sums up in itself merits and ambiguities of the new architectural languages in the years between the end of the twentieth century and the beginning of the third Millennium. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+
+
+
+    </div> -->
+<%- include("footer") -%>
